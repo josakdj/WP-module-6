@@ -1,16 +1,19 @@
-# $${\color{blue}MODULE \ 5}$$
+# $${\color{blue}MODULE \ 6}$$
 > [!NOTE]
-> ### Bootstrap integration
+> ### Create Sidebar and Widgets areas
 
 
-<img width="300" height="400" alt="16" src="https://github.com/user-attachments/assets/414476c8-80f9-4f83-ad2e-09fc4d8f075a" />
-
+<img width="300" height="400" alt="16" src="https://github.com/user-attachments/assets/371fb0e5-5a6a-440e-84d1-cfa6d98d0bef" />
 ____________________________________________________________________________________________________________________________
 
-### ● What is Bootstrap?
+### ● What are Sidebars
 
-### ● Advantages of Using Bootstrap and WordPress Themes Together
+### ● Registering a Sidebar
 
-### ● Disadvantages of Using Bootstrap and WordPress Together?
+### ● Displaying Sidebars in your Theme
 
-### ● Adding Bootstrap
+### ● Widgets
+
+### ● Developing Widgets
+
+### ● Registering a Widget
