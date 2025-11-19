@@ -3,6 +3,8 @@ function ds_style() {
 }
 wp_enqueue_style('digitalschool-style', get_stylesheet_uri());
 
+  wp_enqueue_style('style' , get_template_directory_uri()."/css/bootstrap.min.css" , false , '1.0' , 'all');
+
 add_action( 'wp_enqueue_scripts', 'ds_style');
 
 function digitalschool_setup() {
@@ -19,11 +21,18 @@ function ds_js(){
 
 add_action('wp_enqueue_scripts', 'ds_js');
 
+
+
+
 add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_image_size('team_avatar', 500, 500);
 });
 
-add_action('after_setup_theme', function() {
-    add_post_type_support('page', 'page-attributes');
+add_action('wp_enqueue_scripts', function () {
+if(is_page_template("aboutus.php")){
+    wp_enqueue_script(
+        'tailwind-play',
+        "https://cdn.tailwindcss.com"
+    )}
 });
