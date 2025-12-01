@@ -30,9 +30,10 @@ add_action('after_setup_theme', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-if(is_page_template("aboutus.php")){
-    wp_enqueue_script(
-        'tailwind-play',
-        "https://cdn.tailwindcss.com"
-    )}
+    if ( is_page_template('aboutus.php') ) {
+        wp_enqueue_script(
+            'tailwind-play',
+            'https://cdn.tailwindcss.com'
+        );
+    }
 });
